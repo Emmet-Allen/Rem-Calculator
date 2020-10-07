@@ -1,0 +1,2 @@
+C:\Users\emmet\source\repos\REM_Calculator\Debug\REM_Calculator.exe
+C:\Users\emmet\source\repos\REM_Calculator\Debug\REM_Calculator.pdb
