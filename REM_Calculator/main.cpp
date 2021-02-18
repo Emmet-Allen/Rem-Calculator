@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-
+using namespace std;
 
 void RemCalc() {
 	float px;
@@ -9,20 +9,20 @@ void RemCalc() {
     
     do{
         
-        std::cout << "Please Enter The Number of Pixels You are Converting: " << std::endl;
+        cout << "Please Enter The Number of Pixels You are Converting: " << endl;
     
-	    std::cin >> px; 
+	    cin >> px; 
 
 	    if (px <= 0 ) {
-		    std::cout << "Please Enter a Valid Number of Pixels"  << std::endl;
+		    cout << "Please Enter a Valid Number of Pixels"  << endl;
 	    }
 	    else if (px > 0) {
 		    rem = px / 16;
-			    std::cout << "The REM equivalant to the number of pixels is: " << rem << std::endl;
+			    cout << "The REM equivalant to the number of pixels is: " << rem << endl;
 	    }
 	
-	    std::cout << "Would you like to convert more pixels: Y or N?" << std::endl;
-	    std::cin >> stop;  
+	    cout << "Would you like to convert more pixels: Y or N?" << endl;
+	    cin >> stop;  
 	
     }while(stop == 'Y');
 
@@ -31,7 +31,7 @@ void RemCalc() {
 int main() {
 	RemCalc();
 	
-	std::cout << "Thanks for using remCalc" << std::endl
+	cout << "Thanks for using remCalc" << endl;
 
 	return 0;
 
