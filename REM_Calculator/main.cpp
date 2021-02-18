@@ -4,25 +4,35 @@
 
 void RemCalc() {
 	float px;
+	float rem; 
+	char stop = 'N';
+    
+    do{
+        
+        std::cout << "Please Enter The Number of Pixels You are Converting: " << std::endl;
+    
+	    std::cin >> px; 
 
-	std::cout << "Please Enter The Number of Pixels You are Converting: ";
+	    if (px <= 0 ) {
+		    std::cout << "Please Enter a Valid Number of Pixels"  << std::endl;
+	    }
+	    else if (px > 0) {
+		    rem = px / 16;
+			    std::cout << "The REM equivalant to the number of pixels is: " << rem << std::endl;
+	    }
+	
+	    std::cout << "Would you like to convert more pixels: Y or N?" << std::endl;
+	    std::cin >> stop;  
+	
+    }while(stop == 'Y');
 
-	std::cin >> px; 
-
-	if (px <= 0) {
-		std::cout << "Please Enter a Valid Number of Pixels" << '\n';
-	}
-	else if (px > 0) {
-		float rem = px / 16;
-			std::cout << "The REM equivalant to the number of pixels is: " << rem << std::endl;
-	}
 }
-
 
 int main() {
 	RemCalc();
+	
+	std::cout << "Thanks for using remCalc" << std::endl
 
-	system("pause");
 	return 0;
 
 }
