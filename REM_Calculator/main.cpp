@@ -33,7 +33,7 @@ void RemCalc() {
 int main() {
 	RemCalc();
 	
-	std::cout << "Thanks for using remCalc" << std::endl
+	std::cout << "Thanks for using remCalc" << std::endl;
 
 	return 0;
 
